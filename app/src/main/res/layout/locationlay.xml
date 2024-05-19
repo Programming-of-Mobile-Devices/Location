@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="2dp"
+              android:paddingBottom="2dp"
+              tools:context=".Locations"
+              android:id="@+id/MainLay"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Υπηρεσίες Θέσης"
+        android:id="@+id/TvTitle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvLine1"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvLine2"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvLine3"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvLine4"
+        android:layout_margin="2dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SwService"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCURACY"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="3dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RgAccuracy"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="high"
+            android:id="@+id/RbAccurHigh"
+            android:textSize="13sp"
+            android:layout_margin="2dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="low"
+            android:id="@+id/RbAccurLow"
+            android:textSize="13sp"
+            android:layout_margin="2dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINE"
+            android:id="@+id/RbAccurFine"
+            android:textSize="13sp"
+            android:layout_margin="2dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COARSE"
+            android:id="@+id/RbAccurCoarse"
+            android:textSize="13sp"
+            android:layout_margin="2dp"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALTITUDE"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="3dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RgAltitude"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:id="@+id/RbAltYes"
+            android:textSize="13sp"
+            android:layout_margin="2dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:id="@+id/RbAltNo"
+            android:textSize="13sp"
+            android:layout_margin="2dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POWER"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="3dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RgPower"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGH"
+            android:id="@+id/RbPowtHigh"
+            android:textSize="13sp"
+            android:layout_margin="2dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOW"
+            android:id="@+id/RbPowLow"
+            android:textSize="13sp"
+            android:layout_margin="2dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENABLED"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="3dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RgEnabled"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:id="@+id/RbEnaYes"
+            android:textSize="13sp"
+            android:layout_margin="2dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:id="@+id/RbEnaNo"
+            android:textSize="13sp"
+            android:layout_margin="2dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Διεύθυνση"
+        android:id="@+id/BtAddress"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="3dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/EtMulti"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:editable="true"/>
+
+</LinearLayout>
